@@ -1,6 +1,7 @@
 import Hero from "./Hero";
 import WorkShowcase from "../components/WorkShowcase";
 import About from "./About";
+import Work from "./Work";
 
 const Home = () => {
 
@@ -9,6 +10,7 @@ const Home = () => {
             <Hero />
             <WorkShowcase />
             <About />
+            <Work />
         </div>
     );
 };

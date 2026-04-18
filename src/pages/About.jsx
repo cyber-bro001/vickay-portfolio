@@ -10,8 +10,8 @@ const About = () => {
                 <p className="text-sm md:text-base leading-relaxed mb-4">I’m a frontend developer based in Nigeria, working with modern web technologies to build responsive interfaces and solid user experiences. I pay attention to details and write code that’s clean, maintainable, and built to last. It’s not just about how it looks—it has to feel right and work smoothly.</p>
                 <p className="text-sm md:text-base leading-relaxed">Right now, I’m focused on improving my skills and growing into more advanced areas of development. My goal is to build complete, production-ready products and keep getting better through real-world projects and hands-on experience.</p>
             </div>
-            <div className="w-4/6 overflow-hidden mb-6 md:mb-4 mt-5 md:mt-10 flex items-center">
-                <img src={heroImg} alt="Hero" className="mx-auto  w-full h-auto rounded-lg shadow-lg" />
+            <div className="w-full overflow-hidden mb-6 md:mb-4 mt-5 md:mt-10 flex items-center">
+                <img src={heroImg} alt="Hero" className="mx-auto  w-52 md:w-64 h-auto rounded-lg shadow-lg object-cover" />
             </div>
         </section>
     );
