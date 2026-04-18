@@ -2,6 +2,7 @@ import Hero from "./Hero";
 import WorkShowcase from "../components/WorkShowcase";
 import About from "./About";
 import Work from "./Work";
+import Contact from "./Contact";
 
 const Home = () => {
 
@@ -11,6 +12,7 @@ const Home = () => {
             <WorkShowcase />
             <About />
             <Work />
+            <Contact />
         </div>
     );
 };
