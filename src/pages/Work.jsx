@@ -5,6 +5,8 @@ const Work = () => {
     return (
         <div className="container mx-auto px-4 py-20 max-w-4xl">
             <h1 className="text-xl md:text-3xl font-bold mb-6 text-primaryText text-heading">Work</h1>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
             {
                 Array(4).fill(projectImg).map((img, i) => (
                     <div key={i} className="mb-10 rounded-lg overflow-hidden shadow-lg">
@@ -16,6 +18,7 @@ const Work = () => {
                     </div>
                 ))
             }
+            </div>
             <NavLink to="/work" className="inline-block mt-4 px-6 py-2 bg-primaryText text-white rounded-lg hover:bg-primaryTextHover transition-colors duration-300">
                 View All Projects
             </NavLink>
