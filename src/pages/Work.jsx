@@ -1,27 +1,26 @@
 import { NavLink } from "react-router-dom";
 import projectImg from "../assets/hero.png";
+import ProjectCard from "../components/ProjectCard";
+import { ChevronRight } from "lucide-react";
 
 const Work = () => {
     return (
-        <div className="container mx-auto px-4 py-20 max-w-4xl">
-            <h1 className="text-xl md:text-3xl font-bold mb-6 text-primaryText text-heading">Work</h1>
+        <div className="container mx-auto px-7 md:px-15 py-20">
+            <h1 className="text-xl text-center md:text-3xl font-bold mb-14 text-primaryText text-heading">Some Of The Projects I’ve Built And Shipped.</h1>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-            {
-                Array(4).fill(projectImg).map((img, i) => (
-                    <div key={i} className="mb-10 rounded-lg overflow-hidden shadow-lg">
-                        <img src={img} alt={`Project ${i + 1}`} className="w-full h-64 object-cover" />
-                        <div className="p-6 bg-cardBg">
-                            <h2 className="text-lg font-bold mb-2">Project {i + 1}</h2>
-                            <p className="text-sm text-mutedText">A brief description of the project and its features.</p>
-                        </div>
-                    </div>
-                ))
-            }
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {
+                    Array(4).fill(projectImg).map((img, i) => (
+                        <ProjectCard key={i} project={{ image: img, title: `Project ${i + 1}`, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }} />
+                    ))
+                }
             </div>
-            <NavLink to="/work" className="inline-block mt-4 px-6 py-2 bg-primaryText text-white rounded-lg hover:bg-primaryTextHover transition-colors duration-300">
-                View All Projects
-            </NavLink>
+            <div className="flex justify-center mt-10">
+                <NavLink to="/work" className="text-base inline-block px-6 py-3 bg-accentColor hover:bg-accentHover text-primaryText rounded-xl hover:scale-105 transition-colors duration-300 gap-1">
+                    View All
+                    <ChevronRight className="inline-block ml-1" size={16} />
+                </NavLink>
+            </div>
         </div>
     );
 };

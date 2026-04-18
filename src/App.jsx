@@ -8,7 +8,7 @@ const App = () => {
 
     return (
         <Router>
-            <div className="max-w-4xl md:border-x border-accentSoft md:px-20 mx-auto">
+            <div className="max-w-4xl md:border-x border-accentSoft mx-auto">
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<Home />} />

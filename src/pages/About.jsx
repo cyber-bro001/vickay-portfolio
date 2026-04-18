@@ -3,7 +3,7 @@ import heroImg from '../assets/kay.jpg';
 const About = () => {
 
     return (
-        <section className="py-20 px-3 flex flex-col items-start">
+        <section className="py-20 px-7 md:px-32 flex flex-col items-start">
             <div className="container mx-auto px-4 py-20 max-w-4xl">
                 <h1 className="text-xl md:text-3xl font-bold mb-6 text-primaryText text-heading">About</h1>
                 <p className="text-sm md:text-base leading-relaxed mb-4">I like building clean, scalable web applications with a strong focus on performance and user experience. For me, it’s really about solving problems—taking an idea and turning it into something simple, usable, and reliable.</p>
