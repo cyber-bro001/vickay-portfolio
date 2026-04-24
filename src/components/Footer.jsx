@@ -15,7 +15,7 @@ const Footer = () => {
                     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                         <FaTwitter className='w-5 h-5' />
                     </a>
-                    <a href="mailto:vickay@example.com"  target="_blank" rel="noopener noreferrer">
+                    <a href="mailto:vickay@example.com" target="_blank" rel="noopener noreferrer">
                         <FaEnvelope className='w-5 h-5' />
                     </a>
                 </div>
