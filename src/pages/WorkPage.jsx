@@ -1,11 +1,27 @@
+import ProjectCard from "../components/ProjectCard";
 
+import prime from "../assets/prime.jpeg";
+import bakerSite from "../assets/baker-site.jpeg";
+import agroTodate from "../assets/agro-todate.jpeg";
+import griow from "../assets/griow.jpeg";
+import farmProfitPal from "../assets/farm-profit-pal.jpeg";
+import app from "../assets/app.png";
+import portfolio from "../assets/portfolio.jpeg";
 
 const WorkPage = () => {
+  const images = [{ name: "Prime", img: prime, link: "/projects/prime" }, { name: "Baker Site", img: bakerSite, link: "/projects/baker-site" }, { name: "Agro Todate", img: agroTodate, link: "/projects/agro-todate" }, { name: "Griow", img: griow, link: "/projects/griow" }, { name: "Farm Profit Pal", img: farmProfitPal, link: "/projects/farm-profit-pal" }, { name: "App", img: app, link: "/projects/app" }, { name: "Portfolio", img: portfolio, link: "/projects/portfolio" }];
+
   return (
     <div className="container mx-auto px-4 py-20 max-w-4xl">
-      <h1 className="text-xl md:text-3xl font-bold mb-6 text-primaryText text-heading">Work</h1>
-      <p className="text-sm md:text-base leading-relaxed mb-4">I’m currently working on a few projects that I’m really excited about. I can’t share too much about them just yet, but they involve building some cool web applications and exploring new technologies. I’m always looking for ways to challenge myself and grow as a developer, so these projects are a great opportunity for me to do just that.</p>
-      <p className="text-sm md:text-base leading-relaxed mb-4">In addition to my personal projects, I’m also open to freelance work and collaborations. If you have an idea for a project or need help with something, feel free to reach out. I’m always interested in working on new and exciting projects that allow me to learn and grow as a developer.</p>
+      <h1 className="text-xl md:text-3xl font-bold mb-8 text-primaryText text-heading text-center mt-10 md:mt-20">Some Of The Projects I’ve Built And Shipped.</h1>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {
+          images.map((img, i) => (
+            <ProjectCard key={i} project={{ image: img.img, title: img.name, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", link: img.link }} />
+          ))
+        }
+      </div>
     </div>
   );
 };
