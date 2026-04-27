@@ -8,8 +8,8 @@ const Hero = () => {
             </div>
 
             <div className=" mb-8 md:mb-5">
-                <h1 className="text-2xl md:text-4xl font-bold font-heading mb-4 leading-tight">Hey, I'm Victor Kelechi O. <br />Web Developer</h1>
-                <p className="text-sm md:text-base leading-tight">I build fast, usable web applications <br /> that support real business needs.</p>
+                <h1 className="text-2xl md:text-4xl text-primaryText font-bold font-heading mb-4 leading-tight">Hey, I'm Victor Kelechi O. <br />Web Developer</h1>
+                <p className="text-sm text-secondaryText md:text-base leading-tight">I build fast, usable web applications <br /> that support real business needs.</p>
             </div>
         </section>
     );

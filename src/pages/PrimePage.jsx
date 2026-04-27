@@ -5,11 +5,11 @@ import primeShop from "../assets/prime-shop.jpeg";
 const PrimePage = () => {
     const project = {
         title: "Prime",
-        description: "A comprehensive e-commerce platform built with React, Node.js, and MongoDB. It features a user-friendly interface, secure authentication, and seamless payment integration, providing users with a smooth shopping experience.",
+        description: "A luxury fragrance e-commerce platform designed to deliver a premium digital shopping experience. Users can explore a curated collection of scents, each telling a unique story, with a focus on elegant UI, smooth navigation, and a refined brand feel.",
+impact: "Enhances product perception and improves user engagement through a visually rich, high-end interface.",
         images: [prime, primeShop],
-        technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe API"],
-        liveLink: "https://prime-ecommerce.com",
-        repoLink: "https://github.com/prime-ecommerce"
+        technologies: ["React", "Tailwindcss", "JavaScript"],
+        liveLink: "https://prime-ruby.vercel.app/"
     };
 
     return (

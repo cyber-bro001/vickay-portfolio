@@ -5,12 +5,12 @@ import bakerSiteMenu from "../assets/baker-site-menu.jpeg";
 
 const BakerSitePage = () => {
     const project = {
-        title: "Baker Site",
-        description: "A modern bakery website built with React and Tailwind CSS. It features a visually appealing design, showcasing the bakery's products and services, along with an easy-to-navigate interface for customers.",
+        title: "Butter & Bliss",
+        description: "A cakes and treats ordering platform built for special occasions like weddings and birthdays. Users can browse products and place orders directly through the site, which are instantly sent to the baker via WhatsApp for quick and seamless communication.",
+impact: "Reduces ordering friction and speeds up customer–vendor communication, leading to faster conversions.",
         images: [bakerSite, bakerSiteMenu],
         technologies: ["React", "Tailwind CSS", "JavaScript"],
-        liveLink: "https://baker-site.com",
-        repoLink: "https://github.com/baker-site"
+        liveLink: "https://baker-website-six.vercel.app/"
     };
 
     return (

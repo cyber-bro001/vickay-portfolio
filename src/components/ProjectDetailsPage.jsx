@@ -9,11 +9,13 @@ const ProjectDetailsPage = ({ project }) => {
             <div className="p-3 md:p-6 bg-cardBg rounded-lg border border-accentSoft">
    <span className="text-base md:text-lg font-bold mb-4 block">Description</span>
             <p className="text-sm md:text-base leading-relaxed mb-4">{project.description}</p>
+   <span className="text-base md:text-lg font-bold mb-4 block">Impact: </span>
+            <p className="text-sm md:text-base leading-relaxed mb-4">{project.impact}</p>
             </div>
             
             <div className="grid grid-cols-1 gap-6 mt-10 md:mt-16">
                 {project.images.map((image, index) => (
-                    <div key={index} className="rounded-lg shadow-md overflow-hidden w-58 h-58 md:h-79 flex-shrink-0 rounded-2xl bg-cardBg p-5 md:p-8 border border-accentSoft">   
+                    <div key={index} className="rounded-lg shadow-md overflow-hidden w-58 h-58 md:h-79 flex-shrink-0 rounded-2xl bg-cardBg p-4 md:p-6 border border-accentSoft">   
                     <img src={image} alt={project.title} className="w-full h-auto rounded-lg shadow-2xl" />
                     </div>
                 ))}

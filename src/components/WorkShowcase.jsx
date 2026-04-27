@@ -12,9 +12,10 @@ const WorkShowcase = () => {
   return (
     <div className="relative w-screen left-1/2 -translate-x-1/2 overflow-hidden py-10">
 
-      {/* Gradient masks */}
-      <div className="absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-backgroundColor to-transparent z-10" />
-      <div className="absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-backgroundColor to-transparent z-10" />
+      {/* Gradient masks 
+      <div className="absolute left-0 top-0 h-full w-28 bg-gradient-to-r from-backgroundColor to-transparent z-10" />
+      <div className="absolute right-0 top-0 h-full w-28 bg-gradient-to-l from-backgroundColor to-transparent z-10" />
+      */}
 
       <div className="flex w-max gap-8 animate-scroll hover:[animation-play-state:paused]">
         {images.map((img, i) => (

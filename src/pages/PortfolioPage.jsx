@@ -4,12 +4,12 @@ import portfolioAbout from "../assets/portfolio-about.jpeg";
 
 const PortfolioPage = () => {
     const project = {
-        title: "Portfolio",
-        description: "This portfolio website is a showcase of my work and skills as a web developer. Built with React and Tailwind CSS, it features a clean and modern design that highlights my projects, experience, and contact information. The site is fully responsive, ensuring a seamless experience across all devices.",  
+        title: "Portfolio Site",
+        description: "A personal portfolio website showcasing frontend development projects, technical skills, and design approach. It emphasizes clean UI, responsiveness, and performance, providing a structured experience for potential clients and employers.",
+impact: "Strengthens personal branding and improves how potential clients and recruiters perceive your work.",  
         images: [portfolio, portfolioAbout],
-        technologies: ["React", "Tailwind CSS", "Vite"],
-        liveLink: "https://victor-portfolio.com",
-        repoLink: "https://github.com/victor-portfolio"
+        technologies: ["React", "Tailwind CSS", "JavaScript"],
+        liveLink: "https://mister-kay-portfolio.vercel.app/"
     };
 
     return (
