@@ -1,6 +1,6 @@
-import Resend from "resend";
+import {Resend} from "resend";
 
-const resend = Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const sendEmail = async (req, res) => {
     if (req.method !== "POST") {
@@ -8,15 +8,15 @@ export const sendEmail = async (req, res) => {
     }
 
     try{
-        const {name, email, message} = req.body;
+        const {fullname, email, message} = req.body;
 
         await resend.emails.send({
             from: "Portfolio <onboarding@resend.dev>",
-            to: "victorokwuwa@gmail.com",
+            to: "youremail@gmail.com",
             subject: "New message from your portfolio contact form",
             html: `
                 <h1>New message from your portfolio contact form</h1>
-                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Name:</strong> ${fullname}</p>
                 <p><strong>Email:</strong> ${email}</p>
                 <p><strong>Message:</strong></p>
                 <p>${message}</p>
