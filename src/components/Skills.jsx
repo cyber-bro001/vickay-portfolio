@@ -16,6 +16,8 @@ const Skills = () => {
         { icon: SiMongodb }
     ];
 
+    const scrollSkills = [...skills, ...skills];
+
     return (
         <div className="relative w-80 left-1/2 -translate-x-1/2 overflow-hidden py-10">
 
@@ -24,7 +26,7 @@ const Skills = () => {
             <div className="absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-backgroundColor to-transparent z-10" />
 
             <div className="flex w-max gap-8 animate-scroll">
-                {skills.map((skill, index) => {
+                {scrollSkills.map((skill, index) => {
                     const Icon = skill.icon;
 
                     return (
