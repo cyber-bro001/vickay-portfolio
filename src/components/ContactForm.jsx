@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import FormFeedback from "./FormFeedback";
 
 const ContactForm = () => {
@@ -29,14 +28,24 @@ const ContactForm = () => {
         body: JSON.stringify(formData),
       });
 
+      const data = await response.json();
+
       if (!response.ok) {
-        throw new Error("Failed to send message. Please try again.");
+        throw new Error(data?.error || "Failed to send message");
       }
 
       setSuccess(true);
+
+      // reset form
+      setFormData({
+        fullName: "",
+        email: "",
+        message: "",
+      });
+
     } catch (err) {
       console.error("Error sending email:", err);
-      setError("Failed to send message. Please try again.");
+      setError(err.message || "Failed to send message. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
@@ -50,10 +59,10 @@ const ContactForm = () => {
         success={success}
       />
 
-      <div className="w-full grid grid-col-1 md:grid-cols-2 gap-5">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5">
         <input
           type="text"
-          name="full-name"
+          name="fullName"
           placeholder="Full Name"
           className="w-full px-3 py-4 rounded-xl text-base text-primaryText bg-cardBg border border-accentSoft"
           value={formData.fullName}
@@ -69,27 +78,31 @@ const ContactForm = () => {
           placeholder="Email"
           className="w-full px-3 py-4 rounded-xl text-base text-primaryText bg-cardBg border border-accentSoft"
           value={formData.email}
-          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+          onChange={(e) =>
+            setFormData({ ...formData, email: e.target.value })
+          }
           required
         />
       </div>
 
       <textarea
-        type="text"
         name="message"
         rows="5"
         placeholder="Write your message"
         className="w-full px-3 py-4 rounded-xl text-base text-primaryText bg-cardBg border border-accentSoft"
         value={formData.message}
-        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+        onChange={(e) =>
+          setFormData({ ...formData, message: e.target.value })
+        }
         required
-      ></textarea>
+      />
 
       <button
         type="submit"
-        className="w-full px-3 py-4 rounded-xl text-base text-primaryText bg-accentColor hover:bg-accentHover border border-accentSoft"
+        disabled={isSubmitting}
+        className="w-full px-3 py-4 rounded-xl text-base text-primaryText bg-accentColor hover:bg-accentHover border border-accentSoft disabled:opacity-50"
       >
-        Send message
+        {isSubmitting ? "Sending..." : "Send message"}
       </button>
     </form>
   );
