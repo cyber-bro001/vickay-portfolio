@@ -12,7 +12,7 @@ export const sendEmail = async (req, res) => {
 
         await resend.emails.send({
             from: "Portfolio <onboarding@resend.dev>",
-            to: "youremail@gmail.com",
+            to: "victorokwuwa@gmail.com",
             subject: "New message from your portfolio contact form",
             html: `
                 <h1>New message from your portfolio contact form</h1>
