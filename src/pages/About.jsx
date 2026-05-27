@@ -1,4 +1,4 @@
-import heroImg from '../assets/kay.jpg';
+import heroImg from '../assets/kay.jpeg';
 
 const About = () => {
 

@@ -1,13 +1,18 @@
 import { Link } from "react-router-dom";
 
 import prime from "../assets/prime.jpeg";
-import bakerSite from "../assets/baker-site.jpeg";
+import appLp from "../assets/vrenly-v1-lp.jpeg";
 import agroTodate from "../assets/agro-todate.jpeg";
 import griow from "../assets/griow.jpeg";
 
 
 const WorkShowcase = () => {
-  const images = [{ img: prime, link: "/projects/prime" }, { img: bakerSite, link: "/projects/baker-site" }, { img: agroTodate, link: "/projects/agro-todate" }, { img: griow, link: "/projects/griow" }];
+  const images = [
+    { name: "App", img: appLp, link: "/projects/app" },
+    { name: "Agro Todate", img: agroTodate, link: "/projects/agro-todate" },
+    { name: "Griow", img: griow, link: "/projects/griow" },
+    { name: "Prime", img: prime, link: "/projects/prime" }
+  ];
 
   return (
     <div className="relative w-screen left-1/2 -translate-x-1/2 overflow-hidden py-10">

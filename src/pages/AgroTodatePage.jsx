@@ -5,10 +5,9 @@ import agroTodateSearch from "../assets/agro-todate-search.jpeg";
 const AgroTodatePage = () => {
     const project = {
         title: "Agro Todate",
-        description: "An agriculture update platform that provides farmers with real-time access to relevant news, insights, and practical tips. It helps users stay informed and make smarter farming decisions through timely and useful content.",
-impact: "Empowers farmers with up-to-date knowledge, improving awareness and day-to-day decision-making.",
+        description: "Agro Todate is a comprehensive agricultural management platform designed to empower farmers with real-time data and insights. It offers features such as farming tips, weather forecasting, and market price tracking, helping farmers make informed decisions and optimize their agricultural practices.",
         images: [agroTodate, agroTodateSearch],
-        technologies: ["React", "Tailwindcss", "JavaScript"],
+        technologies: ["React", "Tailwindcss", "Javascript"],
         liveLink: "https://agro-todate.vercel.app/"
     };
 

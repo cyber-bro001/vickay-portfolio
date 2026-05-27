@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaXTwitter, FaWhatsapp } from "react-icons/fa6";
 import { HomeIcon } from 'lucide-react';
 
 export const Navbar = () => {
@@ -24,18 +24,19 @@ before:z-0
 
                     <span className='w-1 h-1 bg-accentSoft rounded-full'></span>
 
-                        <a href="https://github.com/cyber-bro001" className="text-primaryText hover:text-accentColor transition-colors"><FaGithub className='w-5 h-5' /></a>
-                        <span className='w-1 h-1 bg-accentSoft rounded-full'></span>
-                        <a href="https://www.linkedin.com/in/victor-okwuwa-4b237335a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="text-primaryText hover:text-accentColor transition-colors"><FaLinkedin className='w-5 h-5' /></a>
-                        <span className='w-1 h-1 bg-accentSoft rounded-full'></span>
-                        <a href="https://x.com/hey_vickay" className="text-primaryText hover:text-accentColor transition-colors"><FaXTwitter className='w-5 h-5' /></a>
-              
+                    <a href="https://github.com/cyber-bro001" className="hover:text-accentColor transition-colors"><FaGithub className='w-5 h-5' /></a>
+                    <span className='w-1 h-1 bg-accentSoft rounded-full'></span>
+                    <a href="https://www.linkedin.com/in/victor-okwuwa-4b237335a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="hover:text-accentColor transition-colors"><FaLinkedin className='w-5 h-5' /></a>
+                    <span className='w-1 h-1 bg-accentSoft rounded-full'></span>
+                    <a href="https://x.com/hey_vickay" className="hover:text-accentColor transition-colors"><FaXTwitter className='w-5 h-5' /></a>
+
 
                     <span className='w-1 h-1 bg-accentSoft rounded-full'></span>
 
-                    <Link to="/contact" className="text-primaryText bg-accentColor hover:bg-accentSoft px-4 py-2 rounded-xl text-sm font-medium">
-                        Contact
-                    </Link>
+                    <a href="https://wa.me/2347015715944" className="bg-accentColor hover:bg-accentSoft px-4 py-2 rounded-xl text-sm font-medium flex items-center gap-1">
+                        <FaWhatsapp className='w-5 h-5' />
+                        <span className='hidden md:block'>Contact</span>
+                    </a>
 
                 </div>
             </nav>

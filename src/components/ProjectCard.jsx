@@ -4,7 +4,7 @@ import { ChevronRight } from "lucide-react";
 
 const ProjectCard = ({ project }) => {
     return (
-        <div className="mb-10 p-4 rounded-2xl overflow-hidden border border-accentSoft hover:bg-cardBgHover transition-colors duration-300">
+        <div className="mb-10 p-4 rounded-2xl overflow-hidden border border-accentSoft hover:bg-accentSubtle transition-colors duration-300">
             <img src={project.image} alt={project.title} className="w-full h-64 object-cover rounded-2xl hover:scale-105 transition-transform duration-300" />
             <div className="p-6 bg-cardBg rounded-2xl">
                 <h2 className="text-primaryText text-lg font-bold mb-2">{project.title}</h2>

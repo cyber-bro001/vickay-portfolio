@@ -5,10 +5,9 @@ import griowArticle from "../assets/griow-article.jpeg";
 const GriowPage = () => {
     const project = {
         title: "Griow",
-        description: "A farming resource hub created to simplify agriculture for both beginners and experienced farmers. It offers structured guides and actionable tips that break down complex farming practices into clear, easy-to-follow steps.",
-impact: "Makes agricultural knowledge more accessible, reducing the learning curve for new and growing farmers.",
+        description: "Griow is a platform that provides farmers, students and agri-enthusiasts with rich farming practices. It's the farmers first knowledge hub.",
         images: [griow, griowArticle],
-        technologies: ["React", "Tailwindcss", "JavaScript", "Node.js", "MongoDB", "Express"],
+        technologies: ["React", "Node.js", "MongoDB", "Express"],
         liveLink: "https://griow.vercel.app/"
     };
 

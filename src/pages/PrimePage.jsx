@@ -5,10 +5,9 @@ import primeShop from "../assets/prime-shop.jpeg";
 const PrimePage = () => {
     const project = {
         title: "Prime",
-        description: "A luxury fragrance e-commerce platform designed to deliver a premium digital shopping experience. Users can explore a curated collection of scents, each telling a unique story, with a focus on elegant UI, smooth navigation, and a refined brand feel.",
-impact: "Enhances product perception and improves user engagement through a visually rich, high-end interface.",
+        description: "A comprehensive luxry fragrance store. It's sleek providing users with a smooth shopping experience.",
         images: [prime, primeShop],
-        technologies: ["React", "Tailwindcss", "JavaScript"],
+        technologies: ["React", "Javascript", "Tailwindcss"],
         liveLink: "https://prime-ruby.vercel.app/"
     };
 

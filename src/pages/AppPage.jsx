@@ -1,15 +1,14 @@
 import ProjectDetailsPage from "../components/ProjectDetailsPage";
-import app from "../assets/app.png";
-import appModal from "../assets/app-modal.png";
+import app from "../assets/vrenly-v1-lp.jpeg";
+import appModal from "../assets/vrenly-v1-lpa.jpeg";
 
 const AppPage = () => {
     const project = {
-        title: "App",
-        description: "A goal-tracking application designed to help users stay consistent and accountable. It enables users to set clear objectives, monitor progress over time, and stay focused through a simple and intuitive interface.",
-impact: "Encourages consistency and improves users’ ability to achieve personal and professional goals.",
+        title: "Vrenly v1",
+        description: "Vrenly v1 Is a productivity app that helps users set goal, track them and achieve their goals. It's simple and intiutive user interface gives them an overall good user experience.",
         images: [app, appModal],
-technologies: ["React", "Firebase", "Tailwind CSS", "JavaScript"],
-liveLink: "https://evia-six.vercel.app/"
+        technologies: ["React", "Tailwindcss", "Firebase", "Firestore"],
+        liveLink: "https://vrenly.vercel.app/"
     };
 
     return (
