@@ -24,16 +24,16 @@ before:z-0
 
                     <span className='w-1 h-1 bg-accentSoft rounded-full'></span>
 
-                    <a href="https://github.com/cyber-bro001" className="hover:text-accentColor transition-colors"><FaGithub className='w-5 h-5' /></a>
+                    <a href="https://github.com/cyber-bro001" target="blank" className="hover:text-accentColor transition-colors"><FaGithub className='w-5 h-5' /></a>
                     <span className='w-1 h-1 bg-accentSoft rounded-full'></span>
-                    <a href="https://www.linkedin.com/in/kelechi-okwuwa-4b237335a/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BNxyUScK7RGGp7i3uskOHrw%3D%3D" className="hover:text-accentColor transition-colors"><FaLinkedin className='w-5 h-5' /></a>
+                    <a href="https://www.linkedin.com/in/kelechi-okwuwa-4b237335a/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BNxyUScK7RGGp7i3uskOHrw%3D%3D" target="blank" className="hover:text-accentColor transition-colors"><FaLinkedin className='w-5 h-5' /></a>
                     <span className='w-1 h-1 bg-accentSoft rounded-full'></span>
-                    <a href="https://x.com/@hey_kelechi_" className="hover:text-accentColor transition-colors"><FaXTwitter className='w-5 h-5' /></a>
+                    <a href="https://x.com/@hey_kelechi_" target="blank" className="hover:text-accentColor transition-colors"><FaXTwitter className='w-5 h-5' /></a>
 
 
                     <span className='w-1 h-1 bg-accentSoft rounded-full'></span>
 
-                    <a href="https://wa.me/2347015715944" className="bg-accentColor hover:bg-accentSoft px-4 py-2 rounded-xl text-sm font-medium flex items-center gap-1">
+                    <a href="https://wa.me/2347015715944" target="blank" className="bg-accentColor hover:bg-accentSoft px-4 py-2 rounded-xl text-sm font-medium flex items-center gap-1">
                         <FaWhatsapp className='w-5 h-5' />
                         <span className='hidden md:block'>Contact</span>
                     </a>
