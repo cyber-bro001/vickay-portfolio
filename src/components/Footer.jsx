@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className="border border-accentSoft py-10 mt-20">
             <div className="container mx-auto text-center text-sm text-mutedText">
-                &copy; {new Date().getFullYear()} Vickay. All rights reserved.
+                &copy; {new Date().getFullYear()} Kay. All rights reserved.
                 <div className="flex items-center justify-center space-x-4 mt-4">
                     <a href="https://github.com/cyber-bro001" className="hover:text-accentColor transition-colors" target="_blank" rel="noopener noreferrer">
                         <FaGithub className='w-5 h-5' />
