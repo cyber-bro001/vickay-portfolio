@@ -9,10 +9,10 @@ const Footer = () => {
                     <a href="https://github.com/cyber-bro001" className="hover:text-accentColor transition-colors" target="_blank" rel="noopener noreferrer">
                         <FaGithub className='w-5 h-5' />
                     </a>
-                    <a href="https://www.linkedin.com/in/victor-okwuwa-4b237335a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="hover:text-accentColor transition-colors">
+                    <a href="https://www.linkedin.com/in/kelechi-okwuwa-4b237335a/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BNxyUScK7RGGp7i3uskOHrw%3D%3D" target="_blank" rel="noopener noreferrer" className="hover:text-accentColor transition-colors">
                         <FaLinkedin className='w-5 h-5' />
                     </a>
-                    <a href="https://x.com/hey_vickay" target="_blank" rel="noopener noreferrer" className="hover:text-accentColor transition-colors">
+                    <a href="@hey_kelechi_" target="_blank" rel="noopener noreferrer" className="hover:text-accentColor transition-colors">
                         <FaXTwitter className='w-5 h-5' />
                     </a>
                     <a href="https://wa.me/2347015715944" target="_blank" rel="noopener noreferrer" className="hover:text-accentColor transition-colors">
