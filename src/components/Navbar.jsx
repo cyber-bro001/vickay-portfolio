@@ -26,9 +26,9 @@ before:z-0
 
                     <a href="https://github.com/cyber-bro001" className="hover:text-accentColor transition-colors"><FaGithub className='w-5 h-5' /></a>
                     <span className='w-1 h-1 bg-accentSoft rounded-full'></span>
-                    <a href="https://www.linkedin.com/in/victor-okwuwa-4b237335a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="hover:text-accentColor transition-colors"><FaLinkedin className='w-5 h-5' /></a>
+                    <a href="https://www.linkedin.com/in/kelechi-okwuwa-4b237335a/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BNxyUScK7RGGp7i3uskOHrw%3D%3D" className="hover:text-accentColor transition-colors"><FaLinkedin className='w-5 h-5' /></a>
                     <span className='w-1 h-1 bg-accentSoft rounded-full'></span>
-                    <a href="https://x.com/hey_vickay" className="hover:text-accentColor transition-colors"><FaXTwitter className='w-5 h-5' /></a>
+                    <a href="https://x.com/@hey_kelechi_" className="hover:text-accentColor transition-colors"><FaXTwitter className='w-5 h-5' /></a>
 
 
                     <span className='w-1 h-1 bg-accentSoft rounded-full'></span>
